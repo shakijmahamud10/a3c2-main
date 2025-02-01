@@ -18,6 +18,7 @@
           extend: {
             colors: {
               title_primary: "#179800",
+              green_primary: "#179800",
               btn_primary: "#179800",
               card_bg: "#EFEBE3",
               section_bg: "#EFEBE3",
@@ -57,7 +58,7 @@
         <div class="navbar lg:border-none border-b border-title_primary">
           <div class="navbar-start ">
             <div class="dropdown text-title_primary ">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <!-- <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -72,7 +73,7 @@
                     d="M4 6h16M4 12h8m-8 6h16"
                   />
                 </svg>
-              </div>
+              </div> -->
               <ul
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
@@ -127,6 +128,11 @@
               <li class="hover:text-title_primary"><a>Contact Us</a></li>
             </ul>
           </div>
+
+
+          <div class="flex items-center navbar-end lg:hidden text-title_primary">
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <div class="lg:flex navbar-end hidden gap-4">
             <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
             <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
@@ -139,6 +145,7 @@
               >Register</a
             >
           </div>
+
         </div>
       </nav>
       <!-- Navbar End -->
@@ -154,7 +161,7 @@
           On, Prices You’ll Love!
         </h1>
         <p
-          class="text-gray-700 lg:w-[800px] mx-auto text-base lg:text-xl pl-5 pr-5 mb-8 animate-pulse"
+          class="text-gray-800 lg:w-[800px] mx-auto text-base lg:text-lg pl-5 pr-5 mb-8 animate-pulse"
         >
           Shop your daily essentials at unbeatable prices. From fresh produce to
           pantry staples, we’ve got you covered every day!
@@ -219,7 +226,7 @@
 
       <!-- Popular Products section start -->
       <section class="bg-section_bg h-auto">
-        <div class="md:max-w-[1320px] mx-auto pt-36 mb-12 p-5">
+        <div class="md:max-w-[1320px] mx-auto pt-16 lg:pt-36 mb-12 p-5">
           <h1 class="text-4xl text-title_primary font-bold">
             Popular Products
           </h1>
@@ -395,7 +402,7 @@
 
       <!--Todo Right side -->
 
-      <div class="flex bg-[#102861] rounded-xl mb-5 w-full h-[190px] pl-2 lg:pl-2  lg:w-[520px] lg:h-[344px] ">   <!--! div 3 flex start -->
+      <div class="flex bg-[#102861] rounded-xl mb-5 w-full h-[190px] pl-2 lg:pl-2  lg:w-[540px] lg:h-[344px] ">   <!--! div 3 flex start -->
         <!--Todo inner left side  -->
         <div>
           <img class="pl-2 pt-2 lg:pt-8 w-20 h-20 lg:w-28 lg:h-36 lg:mb-4 " src="assets/india-gate-logo.png" alt="india gate rice">
@@ -413,11 +420,73 @@
 </section>
 <!-- arrival & Offer section end -->
 
+<!-- News section start-->
+
+<section class="lg:max-w-[1320px] relative top-56 -mt-52 mx-auto rounded-xl bg-section_bg w-full lg:w-auto lg:h-[450px] ">
+
+  <!--! flex section -->
+  <div class="lg:flex lg:justify-around lg:items-center pt-14  ">
+    <!--Todo Left side -->
+    <div class="lg:mb-0 mb-6">
+        <img class="w-full" src="assets/vegetable-busket.png" alt="">
+    </div>
+    <div class="lg:text-start text-center">
+      <h1 class=" text-3xl lg:text-4xl font-bold mb-3 text-title_primary lg:text-gray-800 ">Get Grocery News!</h1>
+      <p class="text-lg lg:text-xl mb-5 p-2">Exclusive training tips, ticks, product deals and more.</p>
+      <input class=" w-[90%] lg:w-[430px] h-[60px] rounded-xl p-5 mb-4 lg:mb-7" type="email" placeholder="Enter email...."> <br>
+      <button class="btn bg-btn_primary hover:bg-green-700 text-white ">Subscribe</button> <br><br>
+    </div>
+  </div>
+</section>
+<!-- News section end-->
     </main>
     <!-- Main Section End -->
 
     <!-- Footer Section Start -->
-    <footer></footer>
+
+   <footer class="bg-green_primary w-full text-gray-700 pt-80 py-10 px-4 md:px-16 h-auto">
+    <div class="lg:max-w-[1320px] mx-auto">
+      <!-- Logo -->
+      <div class="grid grid-cols-1  lg:grid-cols-3 lg:gap-96 ">
+        <!-- 1st column -->
+        <div class=" mb-8 lg:w-96">
+          <!-- image side -->
+          <img src="assets/logo-footer.png" alt="footer logo" />
+          <p class=" text-xl text-white mt-3">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+  
+        </div>
+        <!-- First column end -->
+
+        <!-- 2nd Column -->
+        <div>
+          <ul class="space-y-5 lg:space-y-8">
+            <li>
+              <a class="text-white hover:text-gray-900 " href="">Product</a>
+            </li>
+            <li>
+              <a class="text-white hover:text-gray-900 " href="">Services</a>
+            </li>
+            <li>
+              <a class="text-white hover:text-gray-900 " href="">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 2nd Column end -->
+
+        <!-- 3rd Column -->
+
+        <div>
+          <h2 class=" text-white text-base pt-8 lg:pt-20 mb-3">Follow Us</h2>
+          <div class="flex justify-center w-20 h-20 mb-2  text-white  gap-5">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <!-- 3rd Column end -->
+      </div>
+    </div>
+  </footer>
     <!-- Footer Section End -->
   </body>
 </html>
